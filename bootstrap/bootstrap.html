@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .flex-container {
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: black;
+          gap: 3rem;
+      }
+  
+      .card {
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+  
+      .row {
+          display: flex;
+          justify-content: center;
+          gap: 3rem;
+      }
+  
+      .buttons {
+          display: flex;
+          justify-content: center;
+          gap: 3rem;
+      }
+  
+      .colordiv {
+          margin-top: 10px;
+          height: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+  
+      .firstdiv {
+          background-color: blue;
+      }
+  
+      .secdiv {
+          background-color: aqua;
+      }
+  
+      .thirddiv {
+          background-color: blueviolet;
+      }
+  
+      .card:hover > img:not(:hover) {
+          opacity: 0.2;
+          background-color: aqua;
+      }
+      .parent:hover > img:not(:hover){
+        opacity: 0.2;
+      }
+      .firstimage{
+        position: relative;
+      }
+      .
+
+  </style>
+  
+</head>
+<body>
+  <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+    <li class="nav-item" role="presentation">
+    <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+    <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+    <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
+    </li>
+  </ul>
+    <div class="row imagerow">
+      <div class="card col-lg-3 col-md-5 col-sm-8" >
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2016/02/5718897981_10faa45ac3_b-640x624.jpg" class="card-img-top" alt="eye" height="200px" width="100px">
+        <h1 style="display:flex;">Hi baby</h1>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" style="align-items: center;justify-content: center;display: inline-block;">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card col-lg-3 col-md-5 col-sm-8">
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2016/02/5718897981_10faa45ac3_b-640x624.jpg" class="card-img-top" alt="eye" height="200px" width="100px">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" style="align-items: center;justify-content: center;display: inline-block;">Go somewhere</a>
+        </div>
+      </div>
+     
+      <div class="card col-sm-8 col-md-5 col-lg-3">
+        <img src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t1.6435-9/99133563_1544838125685131_5320974973731340288_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Ck568D644pYAX-LwxZ3&_nc_ht=scontent.fpbh1-1.fna&oh=00_AfBx3v89zdJhU8cr-fPopVle2OBtiqgutcy1hpmOYH-HxQ&oe=64DCC9C1" class="card-img-top" alt="..." height="200px">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 firstdiv colordiv">col1</div>
+      <div class="col-lg-3 col-md-6 col-sm-12 secdiv colordiv" >col2</div>
+      <div class="col-lg-3 col-md-6 col-sm-12 thirddiv colordiv">col3</div>
+    </div>
+    <br>
+    <hr>
+    <div class="buttons">
+      <button type="button" class="btn btn-success">check</button>
+      <button type="button" class="btn btn-danger">check</button>
+    </div>
+    <hr>
+    <div class="parent">
+        <div class="firstimage">
+        <img src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t1.6435-9/99133563_1544838125685131_5320974973731340288_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Ck568D644pYAX-LwxZ3&_nc_ht=scontent.fpbh1-1.fna&oh=00_AfBx3v89zdJhU8cr-fPopVle2OBtiqgutcy1hpmOYH-HxQ&oe=64DCC9C1" class="card-img-top" alt="..." height="200px">
+          <div class="firsttext">
+            <h2 class="mytext">finally</h2>
+            <p>some progress</p>
+          </div>
+        </div>
+        
+      <img src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t1.6435-9/99133563_1544838125685131_5320974973731340288_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Ck568D644pYAX-LwxZ3&_nc_ht=scontent.fpbh1-1.fna&oh=00_AfBx3v89zdJhU8cr-fPopVle2OBtiqgutcy1hpmOYH-HxQ&oe=64DCC9C1" class="card-img-top" alt="..." height="200px">
+      <img src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t1.6435-9/99133563_1544838125685131_5320974973731340288_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Ck568D644pYAX-LwxZ3&_nc_ht=scontent.fpbh1-1.fna&oh=00_AfBx3v89zdJhU8cr-fPopVle2OBtiqgutcy1hpmOYH-HxQ&oe=64DCC9C1" class="card-img-top" alt="..." height="200px">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

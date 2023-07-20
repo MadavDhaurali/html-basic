@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+       
+
+        .grid-container{
+            display: grid; /*displays the container as a grid*/
+            gap:.3rem;
+            height:100vh;
+            grid-template-columns: 1fr 1fr 1.5fr;
+            grid-template-rows: 1fr 1fr;
+            
+        }
+        .griditem{
+            display: flex;
+            border: 10px solid black; 
+            justify-content: center; 
+            align-items: center;
+        }
+        .thumb{
+            background-color: rgb(43, 139, 222);
+            /* grid-column:span 2; */
+            grid-area: 1/1/2/3;
+        }
+        .ok{
+            background-color: red;
+            /* grid-column:span 2; */
+            /* grid-column-start: 1;
+            grid-column-end:3 ;
+            grid-row-start:2 ;
+            grid-row-end:3 ; */
+            grid-area: 2/1/3/3;
+            order:2;
+        }
+        .love{
+            background-color: greenyellow;
+            grid-row: span 2;
+            /* grid-area: 1/2/3/4; */
+           
+        }
+    </style>
+</head>
+<body>
+  
+            <div class="grid-container">
+                <div class="griditem thumb">
+                        <details>
+                        <summary>social Media</summary>
+                            <p>insta</p>
+                            <p>facebook</p>
+                        </details>
+                </div>
+                <div class="griditem ok">👌</div>
+                <div class="griditem love">❤️</div>
+            </div>
+       
+ 
+    
+</body>
+</html>

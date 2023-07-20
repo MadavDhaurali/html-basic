@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarginPadding</title>
+    <style>
+        .div1{
+            background: #f5c742; /* yellow */
+            width:200px;
+            height: 200px;
+            border: 10px solid black;
+        }
+        .div2{
+            background: #42f58d; /* yellow */
+            width:200px;
+            height: 200px;
+            margin-left: 220px;
+            margin-top:0%;
+            border:solid black;
+            border-width: 20px 10px;
+            /* border-left: 10px solid black;
+            border-right: 10px solid black;
+            border-top: 20px solid black;
+            border-bottom: 20px solid black; */
+           
+           
+            
+        }
+        .div2 p{
+            padding: 30px 30px;
+        }
+        .div3{
+            background: #6642f5; /* yellow */
+            width:150px;
+            height: 150px;
+            margin-left: 50px;
+            border-left: 10px solid black;
+            border-right: 10px solid black;
+            border-top: 10px solid black;
+            border-bottom: 10px solid black;
+
+        }
+        .outerbox{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            position:relative;
+        } 
+        .circlebox{
+            background-color: #42f58d;
+            width:100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top:140px;
+            left:70px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>
+            this is the content in the div 1
+        </p>
+
+    </div>
+
+    <div class="div2">
+        <p>
+            this is the content in the div 2
+        </p>
+
+    </div>
+    <div class="div3">
+        <p>
+            this is the content in the div 3
+        </p>
+
+    </div>
+
+    <div class="outerbox">
+        <div class="circlebox">
+        </div>
+    </div>
+    
+</body>
+</html>
