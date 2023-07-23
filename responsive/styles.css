@@ -1,0 +1,66 @@
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .theme-toggle input {
+    display: none;
+  }
+  
+  .theme-toggle label {
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .theme-toggle input:checked + label {
+    background-color: #2196F3;
+  }
+  
+  .theme-toggle label::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-top: 1px;
+    transition: margin-left 0.5s;
+  }
+  
+  .theme-toggle input:checked + label::after {
+    margin-left: 20px;
+  }
+  
+  .theme-toggle label::before {
+    content: "☀";
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    transition: opacity 0.5s;
+  }
+  
+  .theme-toggle input:checked + label::before {
+    opacity: 0;
+  }
+  
+  body.dark-theme {
+    --background-color: #333;
+    --text-color: #fff;
+  }
+  
